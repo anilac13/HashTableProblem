@@ -8,12 +8,25 @@ namespace HashTableProblem
         static void Main(string[] args)
         {
             HashTable hashTable = new HashTable(10);
-            hashTable.Add("To");
-            hashTable.Add("be");
-            hashTable.Add("or");
+            hashTable.Add("“Paranoids");
+            hashTable.Add("are");
             hashTable.Add("not");
-            hashTable.Add("to");
-            hashTable.Add("be");
+            hashTable.Add("paranid");
+            hashTable.Add("because");
+            hashTable.Add("they");
+            hashTable.Add("are");
+            hashTable.Add("paranoid");
+            hashTable.Add("but");
+            hashTable.Add("because");
+            hashTable.Add("they");
+            hashTable.Add("keep");
+            hashTable.Add("putting");
+            hashTable.Add("themselves");
+            hashTable.Add("deliberately");
+            hashTable.Add("into");
+            hashTable.Add("paranoid");
+            hashTable.Add("avoidable");
+            hashTable.Add("situations");
             hashTable.Display();
 
             Console.WriteLine("\nEnter word to search in Hash Table");
