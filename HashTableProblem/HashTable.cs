@@ -37,6 +37,27 @@ namespace HashTableProblem
             }
             Console.WriteLine($"Data '{word}' is not found");
         }
+        public void RemoveWord(string word)
+        {
+            int index = Math.Abs(word.GetHashCode()) % Words.Length;
+            Node currentNode = Words[index];
+            Node prevNode = currentNode;
+            if (currentNode != null && currentNode.Data == word)
+            {
+                Words[index] = currentNode.Next;
+                return;
+            }
+            while (currentNode != null)
+            {
+                if (currentNode.Data.Equals(word))
+                {
+                    prevNode = currentNode.Next;
+                    return;
+                }
+                prevNode = currentNode;
+                currentNode = currentNode.Next;
+            }
+        }
         public void Display()
         {
             for (int index = 0; index < Words.Length; index++)

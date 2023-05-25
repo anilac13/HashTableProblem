@@ -8,7 +8,7 @@ namespace HashTableProblem
         static void Main(string[] args)
         {
             HashTable hashTable = new HashTable(10);
-            hashTable.Add("“Paranoids");
+            hashTable.Add("Paranoids");
             hashTable.Add("are");
             hashTable.Add("not");
             hashTable.Add("paranid");
@@ -27,11 +27,9 @@ namespace HashTableProblem
             hashTable.Add("paranoid");
             hashTable.Add("avoidable");
             hashTable.Add("situations");
-            hashTable.Display();
 
-            Console.WriteLine("\nEnter word to search in Hash Table");
-            string word = Console.ReadLine();
-            hashTable.FindWord(word);
+            hashTable.RemoveWord("avoidable");
+            hashTable.Display();
         }
     }
 }
